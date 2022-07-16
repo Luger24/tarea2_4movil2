@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:video="clr-namespace:Xam.Forms.VideoPlayer;assembly=Xam.Forms.VideoPlayer"
+             x:Class="tarea2_4movil2.Views.ReproducirVideo">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Descripcion" x:Name="lbldescripcion"
+                VerticalOptions="CenterAndExpand" FontSize="18" HorizontalTextAlignment="Center"/>
+            <video:VideoPlayer 
+                    x:Name="videoPlayer2" 
+                    BackgroundColor="White"
+                    HorizontalOptions="Center"
+                    HeightRequest="500" 
+                    />
+            <Button Text="Volver" Grid.Column="0" x:Name="btnRegresar" Clicked="btnRegresar_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
